@@ -1,18 +1,37 @@
-#Git steps to clone, branch, and push new changes.
+# Git steps to clone, branch, and push new changes.
 
 ## Part 1: Clonning a Repository
 
 Follow the steps inorder to clone a Repository into your local space.
 
-```
+```git
 git clone <https link to the repo> OR git clone <https link to the repo> <optional user specified directory name to clone the repo into>
 
 ```
-If there is no directory name specified it will the use the name of the repo to create a directory. 
+- If there is no directory name specified it will the use the name of the repo to create a directory. 
 
-##Part 2: 
-2.	cd repo
-3.	git status to check which branch you are on and to check if the branch is clean.
+## Part 2: Checking the Status of the Repository on CMD. 
+```
+cd <repository directory in local>
+```
+- To check the status of the repository use the command below. This command will give all the information about the repo, the branch it is on, if the branch is clean, if the branch has any uncommited files etc. 
+
+```git
+git status
+```
+- Make sure the branch is always clean without any uncommited files. 
+- To make sure you have the latest information, do a pull of the remote repository.
+
+```git
+git pull origin <branch you are on> 
+			(OR) 
+git pull
+```
+
+## Part 3: Creating Branches
+
+
+
 4.	Check if a develop branch is not present for the repo, create a develop branch. 
 a.	git branch 
 i.	should show all the branches present. The current branch it is on is usually shown with an “*”
